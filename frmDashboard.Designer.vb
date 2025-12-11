@@ -47,38 +47,38 @@ Partial Class frmDashboard
         ' lblIncome
         ' 
         lblIncome.AutoSize = True
-        lblIncome.BackColor = SystemColors.Window
-        lblIncome.Font = New Font("Segoe UI", 20F, FontStyle.Bold)
-        lblIncome.ForeColor = Color.FromArgb(CByte(87), CByte(111), CByte(239))
-        lblIncome.Location = New Point(423, 150)
+        lblIncome.BackColor = Color.FromArgb(CByte(0), CByte(194), CByte(80))
+        lblIncome.Font = New Font("Segoe UI", 18F, FontStyle.Bold)
+        lblIncome.ForeColor = Color.White
+        lblIncome.Location = New Point(376, 165)
         lblIncome.Name = "lblIncome"
-        lblIncome.Size = New Size(226, 46)
+        lblIncome.Size = New Size(121, 41)
         lblIncome.TabIndex = 0
-        lblIncome.Text = "Total Income"
+        lblIncome.Text = "Income"
         ' 
         ' lblExpense
         ' 
         lblExpense.AutoSize = True
-        lblExpense.BackColor = SystemColors.Window
-        lblExpense.Font = New Font("Segoe UI", 20F, FontStyle.Bold)
-        lblExpense.ForeColor = Color.FromArgb(CByte(87), CByte(111), CByte(239))
-        lblExpense.Location = New Point(751, 150)
+        lblExpense.BackColor = Color.FromArgb(CByte(239), CByte(59), CByte(59))
+        lblExpense.Font = New Font("Segoe UI", 18F, FontStyle.Bold)
+        lblExpense.ForeColor = Color.White
+        lblExpense.Location = New Point(719, 165)
         lblExpense.Name = "lblExpense"
-        lblExpense.Size = New Size(253, 46)
+        lblExpense.Size = New Size(146, 41)
         lblExpense.TabIndex = 1
-        lblExpense.Text = "Total Expenses"
+        lblExpense.Text = "Expenses"
         ' 
         ' lblBalance
         ' 
         lblBalance.AutoSize = True
         lblBalance.BackColor = Color.FromArgb(CByte(87), CByte(111), CByte(239))
-        lblBalance.Font = New Font("Segoe UI", 20F, FontStyle.Bold)
+        lblBalance.Font = New Font("Segoe UI", 18F, FontStyle.Bold)
         lblBalance.ForeColor = SystemColors.Window
-        lblBalance.Location = New Point(55, 150)
+        lblBalance.Location = New Point(33, 165)
         lblBalance.Name = "lblBalance"
-        lblBalance.Size = New Size(274, 46)
+        lblBalance.Size = New Size(126, 41)
         lblBalance.TabIndex = 2
-        lblBalance.Text = "Current Balance"
+        lblBalance.Text = "Balance"
         ' 
         ' DataGridView1
         ' 
@@ -177,11 +177,11 @@ Partial Class frmDashboard
         ' 
         Label2.AutoSize = True
         Label2.BackColor = SystemColors.Control
-        Label2.Font = New Font("Segoe UI", 18F, FontStyle.Bold)
-        Label2.ForeColor = Color.FromArgb(CByte(64), CByte(64), CByte(64))
+        Label2.Font = New Font("Segoe UI", 20F, FontStyle.Bold)
+        Label2.ForeColor = Color.FromArgb(CByte(12), CByte(48), CByte(89))
         Label2.Location = New Point(24, 30)
         Label2.Name = "Label2"
-        Label2.Size = New Size(268, 41)
+        Label2.Size = New Size(305, 46)
         Label2.TabIndex = 13
         Label2.Text = "Balance Summary"
         ' 
@@ -202,7 +202,7 @@ Partial Class frmDashboard
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.Control
-        ClientSize = New Size(1062, 701)
+        ClientSize = New Size(1062, 659)
         Controls.Add(Label3)
         Controls.Add(Label2)
         Controls.Add(Label1)

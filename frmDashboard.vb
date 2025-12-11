@@ -18,9 +18,9 @@ Public Class frmDashboard
                 totalExpense = Convert.ToDouble(dtExp.Rows(0)(0))
             End If
 
-            lblIncome.Text = "Income: $" & totalIncome.ToString("N2")
-            lblExpense.Text = "Expense: $" & totalExpense.ToString("N2")
-            lblBalance.Text = "Balance: $" & (totalIncome - totalExpense).ToString("N2")
+            lblIncome.Text = totalIncome.ToString("N2") & " EGP"
+            lblExpense.Text = totalExpense.ToString("N2") & " EGP"
+            lblBalance.Text = (totalIncome - totalExpense).ToString("N2") & " EGP"
 
             ' 2. جلب البيانات للجدول
             Dim sqlGrid As String = "SELECT top 10 T.TransactionID, T.Amount, C.CategoryName, T.TransDate, T.Description " &
@@ -80,4 +80,5 @@ Public Class frmDashboard
     Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
 
     End Sub
+
 End Class
