@@ -33,7 +33,7 @@ Partial Class frmSplash
         ' 
         ' frmSplash
         ' 
-        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
         FormBorderStyle = FormBorderStyle.None
