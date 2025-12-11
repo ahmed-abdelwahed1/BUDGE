@@ -32,4 +32,36 @@ Module DbHelper
             Return False
         End Try
     End Function
+
+    ' --- أضف هذا الكود في نهاية ملف DbHelper.vb ---
+
+    Public Sub StyleGrid(dgv As DataGridView)
+        ' 1. الإعدادات العامة
+        dgv.BorderStyle = BorderStyle.None
+        dgv.BackgroundColor = Color.White
+        dgv.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal
+        dgv.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None
+        dgv.EnableHeadersVisualStyles = False ' ضروري لتفعيل الألوان
+
+        ' 2. تنسيق رأس الجدول (Header)
+        dgv.ColumnHeadersHeight = 40
+        dgv.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(56, 113, 199) ' أزرق الشعار
+        dgv.ColumnHeadersDefaultCellStyle.ForeColor = Color.White
+        dgv.ColumnHeadersDefaultCellStyle.Font = New Font("Segoe UI", 10, FontStyle.Bold)
+        dgv.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter
+
+        ' 3. تنسيق الصفوف
+        dgv.DefaultCellStyle.BackColor = Color.White
+        dgv.DefaultCellStyle.ForeColor = Color.Black
+        dgv.DefaultCellStyle.Font = New Font("Segoe UI", 10)
+        dgv.DefaultCellStyle.SelectionBackColor = Color.FromArgb(231, 243, 255) ' أزرق فاتح جداً عند التحديد
+        dgv.DefaultCellStyle.SelectionForeColor = Color.Black
+        dgv.RowTemplate.Height = 35
+
+        ' 4. إعدادات إضافية
+        dgv.RowHeadersVisible = False ' إخفاء العمود الجانبي
+        dgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill ' ملء الشاشة
+        dgv.SelectionMode = DataGridViewSelectionMode.FullRowSelect ' تحديد الصف بالكامل
+    End Sub
+
 End Module
