@@ -160,9 +160,14 @@ The application uses a Microsoft Access database (`BudgeDB.accdb`) located in th
 
 This project is developed as an academic project for educational purposes.
 
-## 👤 Author
+## 👥 Developed By
 
-Developed as part of the Advanced Programming course requirements.
+- Ahmed Shehata Said Abdelwahed
+- Aya Magdy Abdallah Aboramadan
+- Ahmed Tamer Elsayed Mohamed
+- Esraa Salah Mohamed Mohamed
+- Sarah Essam Eldin Mahmoud Elsayed
+- Manar Mansour Mohamed Abdelwahed
 
 ---
 
