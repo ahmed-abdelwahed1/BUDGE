@@ -1,8 +1,8 @@
 ﻿Imports System.Data.OleDb
 
 Module DbHelper
-    ' مسار قاعدة البيانات النسبي
-    Public ConnString As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\BUDGEDB.accdb"
+    ' مسار قاعدة البيانات
+    Public ConnString As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\BudgeDB.accdb"
     Public Conn As New OleDbConnection(ConnString)
 
     ' دالة لجلب البيانات (SELECT)
@@ -13,7 +13,7 @@ Module DbHelper
             Dim adapter As New OleDbDataAdapter(cmd)
             adapter.Fill(dt)
         Catch ex As Exception
-            MsgBox("Error: " & ex.Message)
+            MsgBox("Error in GetData: " & ex.Message)
         End Try
         Return dt
     End Function
@@ -27,7 +27,7 @@ Module DbHelper
             Conn.Close()
             Return True
         Catch ex As Exception
-            MsgBox("Error: " & ex.Message)
+            MsgBox("Error in ExecuteQuery: " & ex.Message)
             If Conn.State = ConnectionState.Open Then Conn.Close()
             Return False
         End Try
