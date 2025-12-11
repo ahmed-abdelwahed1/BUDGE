@@ -23,6 +23,7 @@ Partial Class frmSplash
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         components = New ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmSplash))
         Timer1 = New Timer(components)
         SuspendLayout()
         ' 
@@ -35,6 +36,8 @@ Partial Class frmSplash
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
+        BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
+        BackgroundImageLayout = ImageLayout.Zoom
         ClientSize = New Size(800, 450)
         FormBorderStyle = FormBorderStyle.None
         Name = "frmSplash"
