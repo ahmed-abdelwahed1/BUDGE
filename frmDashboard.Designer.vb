@@ -30,7 +30,6 @@ Partial Class frmDashboard
         btnAdd = New Button()
         btnCategories = New Button()
         btnRefresh = New Button()
-        PictureBox1 = New PictureBox()
         PictureBox2 = New PictureBox()
         PictureBox3 = New PictureBox()
         PictureBox4 = New PictureBox()
@@ -39,7 +38,6 @@ Partial Class frmDashboard
         Label2 = New Label()
         Label3 = New Label()
         CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
-        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox4, ComponentModel.ISupportInitialize).BeginInit()
@@ -52,7 +50,7 @@ Partial Class frmDashboard
         lblIncome.BackColor = SystemColors.Window
         lblIncome.Font = New Font("Segoe UI", 20F, FontStyle.Bold)
         lblIncome.ForeColor = Color.FromArgb(CByte(87), CByte(111), CByte(239))
-        lblIncome.Location = New Point(423, 193)
+        lblIncome.Location = New Point(423, 150)
         lblIncome.Name = "lblIncome"
         lblIncome.Size = New Size(226, 46)
         lblIncome.TabIndex = 0
@@ -64,7 +62,7 @@ Partial Class frmDashboard
         lblExpense.BackColor = SystemColors.Window
         lblExpense.Font = New Font("Segoe UI", 20F, FontStyle.Bold)
         lblExpense.ForeColor = Color.FromArgb(CByte(87), CByte(111), CByte(239))
-        lblExpense.Location = New Point(751, 193)
+        lblExpense.Location = New Point(751, 150)
         lblExpense.Name = "lblExpense"
         lblExpense.Size = New Size(253, 46)
         lblExpense.TabIndex = 1
@@ -76,7 +74,7 @@ Partial Class frmDashboard
         lblBalance.BackColor = Color.FromArgb(CByte(87), CByte(111), CByte(239))
         lblBalance.Font = New Font("Segoe UI", 20F, FontStyle.Bold)
         lblBalance.ForeColor = SystemColors.Window
-        lblBalance.Location = New Point(55, 193)
+        lblBalance.Location = New Point(55, 150)
         lblBalance.Name = "lblBalance"
         lblBalance.Size = New Size(274, 46)
         lblBalance.TabIndex = 2
@@ -85,10 +83,10 @@ Partial Class frmDashboard
         ' DataGridView1
         ' 
         DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridView1.Location = New Point(40, 396)
+        DataGridView1.Location = New Point(40, 355)
         DataGridView1.Name = "DataGridView1"
         DataGridView1.RowHeadersWidth = 51
-        DataGridView1.Size = New Size(980, 253)
+        DataGridView1.Size = New Size(980, 266)
         DataGridView1.TabIndex = 3
         ' 
         ' btnAdd
@@ -96,7 +94,7 @@ Partial Class frmDashboard
         btnAdd.BackColor = Color.FromArgb(CByte(87), CByte(111), CByte(239))
         btnAdd.Font = New Font("Segoe UI", 12F)
         btnAdd.ForeColor = Color.White
-        btnAdd.Location = New Point(800, 320)
+        btnAdd.Location = New Point(800, 279)
         btnAdd.Name = "btnAdd"
         btnAdd.Size = New Size(220, 60)
         btnAdd.TabIndex = 4
@@ -106,7 +104,7 @@ Partial Class frmDashboard
         ' btnCategories
         ' 
         btnCategories.Font = New Font("Segoe UI", 12F)
-        btnCategories.Location = New Point(561, 320)
+        btnCategories.Location = New Point(561, 279)
         btnCategories.Name = "btnCategories"
         btnCategories.Size = New Size(220, 60)
         btnCategories.TabIndex = 5
@@ -123,20 +121,10 @@ Partial Class frmDashboard
         btnRefresh.Text = "Refresh Data"
         btnRefresh.UseVisualStyleBackColor = True
         ' 
-        ' PictureBox1
-        ' 
-        PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
-        PictureBox1.Location = New Point(24, 24)
-        PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(222, 49)
-        PictureBox1.SizeMode = PictureBoxSizeMode.AutoSize
-        PictureBox1.TabIndex = 7
-        PictureBox1.TabStop = False
-        ' 
         ' PictureBox2
         ' 
         PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), Image)
-        PictureBox2.Location = New Point(24, 145)
+        PictureBox2.Location = New Point(24, 102)
         PictureBox2.Name = "PictureBox2"
         PictureBox2.Size = New Size(328, 140)
         PictureBox2.SizeMode = PictureBoxSizeMode.StretchImage
@@ -146,7 +134,7 @@ Partial Class frmDashboard
         ' PictureBox3
         ' 
         PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), Image)
-        PictureBox3.Location = New Point(367, 145)
+        PictureBox3.Location = New Point(367, 102)
         PictureBox3.Name = "PictureBox3"
         PictureBox3.Size = New Size(328, 140)
         PictureBox3.SizeMode = PictureBoxSizeMode.StretchImage
@@ -156,7 +144,7 @@ Partial Class frmDashboard
         ' PictureBox4
         ' 
         PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), Image)
-        PictureBox4.Location = New Point(710, 145)
+        PictureBox4.Location = New Point(710, 102)
         PictureBox4.Name = "PictureBox4"
         PictureBox4.Size = New Size(328, 140)
         PictureBox4.SizeMode = PictureBoxSizeMode.StretchImage
@@ -169,7 +157,7 @@ Partial Class frmDashboard
         Label1.BackColor = SystemColors.Window
         Label1.Font = New Font("Segoe UI", 18F, FontStyle.Bold)
         Label1.ForeColor = Color.FromArgb(CByte(64), CByte(64), CByte(64))
-        Label1.Location = New Point(40, 314)
+        Label1.Location = New Point(40, 273)
         Label1.Name = "Label1"
         Label1.Size = New Size(296, 41)
         Label1.TabIndex = 11
@@ -178,7 +166,7 @@ Partial Class frmDashboard
         ' PictureBox5
         ' 
         PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), Image)
-        PictureBox5.Location = New Point(24, 308)
+        PictureBox5.Location = New Point(24, 265)
         PictureBox5.Name = "PictureBox5"
         PictureBox5.Size = New Size(1014, 373)
         PictureBox5.SizeMode = PictureBoxSizeMode.StretchImage
@@ -191,7 +179,7 @@ Partial Class frmDashboard
         Label2.BackColor = SystemColors.Control
         Label2.Font = New Font("Segoe UI", 18F, FontStyle.Bold)
         Label2.ForeColor = Color.FromArgb(CByte(64), CByte(64), CByte(64))
-        Label2.Location = New Point(24, 87)
+        Label2.Location = New Point(24, 30)
         Label2.Name = "Label2"
         Label2.Size = New Size(268, 41)
         Label2.TabIndex = 13
@@ -203,7 +191,7 @@ Partial Class frmDashboard
         Label3.BackColor = SystemColors.Window
         Label3.Font = New Font("Segoe UI", 10F)
         Label3.ForeColor = Color.FromArgb(CByte(87), CByte(111), CByte(239))
-        Label3.Location = New Point(43, 355)
+        Label3.Location = New Point(43, 314)
         Label3.Name = "Label3"
         Label3.Size = New Size(309, 23)
         Label3.TabIndex = 14
@@ -214,11 +202,10 @@ Partial Class frmDashboard
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.Control
-        ClientSize = New Size(1062, 693)
+        ClientSize = New Size(1062, 701)
         Controls.Add(Label3)
         Controls.Add(Label2)
         Controls.Add(Label1)
-        Controls.Add(PictureBox1)
         Controls.Add(btnRefresh)
         Controls.Add(btnCategories)
         Controls.Add(btnAdd)
@@ -230,11 +217,11 @@ Partial Class frmDashboard
         Controls.Add(PictureBox3)
         Controls.Add(PictureBox4)
         Controls.Add(PictureBox5)
+        Icon = CType(resources.GetObject("$this.Icon"), Icon)
         Name = "frmDashboard"
         StartPosition = FormStartPosition.CenterScreen
         Text = "BUDGE"
         CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()
-        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox3, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox4, ComponentModel.ISupportInitialize).EndInit()
@@ -250,7 +237,6 @@ Partial Class frmDashboard
     Friend WithEvents btnAdd As Button
     Friend WithEvents btnCategories As Button
     Friend WithEvents btnRefresh As Button
-    Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents PictureBox4 As PictureBox

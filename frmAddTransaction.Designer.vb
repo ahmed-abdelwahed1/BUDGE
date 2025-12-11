@@ -22,6 +22,7 @@ Partial Class frmAddTransaction
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmAddTransaction))
         txtAmount = New TextBox()
         cmbCategories = New ComboBox()
         dtpDate = New DateTimePicker()
@@ -42,6 +43,7 @@ Partial Class frmAddTransaction
         txtAmount.Name = "txtAmount"
         txtAmount.Size = New Size(346, 30)
         txtAmount.TabIndex = 0
+        txtAmount.Text = "$ 00.00"
         ' 
         ' cmbCategories
         ' 
@@ -104,40 +106,40 @@ Partial Class frmAddTransaction
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Font = New Font("Segoe UI", 12F)
-        Label2.Location = New Point(57, 148)
+        Label2.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
+        Label2.Location = New Point(57, 145)
         Label2.Name = "Label2"
-        Label2.Size = New Size(83, 28)
+        Label2.Size = New Size(88, 28)
         Label2.TabIndex = 7
         Label2.Text = "Amount"
         ' 
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Font = New Font("Segoe UI", 12F)
+        Label3.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
         Label3.Location = New Point(57, 208)
         Label3.Name = "Label3"
-        Label3.Size = New Size(92, 28)
+        Label3.Size = New Size(98, 28)
         Label3.TabIndex = 8
         Label3.Text = "Category"
         ' 
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Font = New Font("Segoe UI", 12F)
+        Label4.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
         Label4.Location = New Point(232, 208)
         Label4.Name = "Label4"
-        Label4.Size = New Size(53, 28)
+        Label4.Size = New Size(57, 28)
         Label4.TabIndex = 9
         Label4.Text = "Date"
         ' 
         ' Label5
         ' 
         Label5.AutoSize = True
-        Label5.Font = New Font("Segoe UI", 12F)
+        Label5.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
         Label5.Location = New Point(57, 296)
         Label5.Name = "Label5"
-        Label5.Size = New Size(112, 28)
+        Label5.Size = New Size(121, 28)
         Label5.TabIndex = 10
         Label5.Text = "Description"
         ' 
@@ -157,7 +159,9 @@ Partial Class frmAddTransaction
         Controls.Add(dtpDate)
         Controls.Add(cmbCategories)
         Controls.Add(txtAmount)
+        Icon = CType(resources.GetObject("$this.Icon"), Icon)
         Name = "frmAddTransaction"
+        StartPosition = FormStartPosition.CenterScreen
         Text = "Add New Transaction"
         ResumeLayout(False)
         PerformLayout()

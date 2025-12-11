@@ -22,6 +22,7 @@ Partial Class frmCategories
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmCategories))
         txtCatName = New TextBox()
         rbIncome = New RadioButton()
         rbExpense = New RadioButton()
@@ -130,9 +131,10 @@ Partial Class frmCategories
         Controls.Add(rbExpense)
         Controls.Add(rbIncome)
         Controls.Add(txtCatName)
+        Icon = CType(resources.GetObject("$this.Icon"), Icon)
         Name = "frmCategories"
         StartPosition = FormStartPosition.CenterScreen
-        Text = "frmCategories"
+        Text = "Categories"
         CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
