@@ -7,6 +7,23 @@ Public Class frmCategories
         Try
             Dim sql As String = "SELECT CategoryID, CategoryName, CatType FROM Categories"
             DataGridView1.DataSource = GetData(sql)
+
+            ' 1. تطبيق الستايل الجمالي العام
+            StyleGrid(DataGridView1)
+
+            ' 2. تحسينات خاصة بجدول التصنيفات
+            If DataGridView1.Columns.Count > 0 Then
+                ' إخفاء رقم المعرف لأنه لا يهم المستخدم
+                DataGridView1.Columns("CategoryID").Visible = False
+
+                ' تغيير عناوين الأعمدة لتكون أوضح
+                DataGridView1.Columns("CategoryName").HeaderText = "Category Name"
+                DataGridView1.Columns("CatType").HeaderText = "Type"
+
+                ' توسيط عمود النوع لجمال أكثر
+                DataGridView1.Columns("CatType").DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter
+            End If
+
         Catch ex As Exception
             MessageBox.Show("Error loading: " & ex.Message)
         End Try
@@ -44,5 +61,4 @@ Public Class frmCategories
             MessageBox.Show("Error: " & ex.Message)
         End Try
     End Sub
-
 End Class
