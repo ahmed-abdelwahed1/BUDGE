@@ -28,60 +28,129 @@ Partial Class frmAddTransaction
         txtDesc = New TextBox()
         btnSave = New Button()
         btnCancel = New Button()
+        Label1 = New Label()
+        Label2 = New Label()
+        Label3 = New Label()
+        Label4 = New Label()
+        Label5 = New Label()
         SuspendLayout()
         ' 
         ' txtAmount
         ' 
-        txtAmount.Location = New Point(38, 29)
+        txtAmount.Font = New Font("Segoe UI", 10F)
+        txtAmount.Location = New Point(150, 146)
         txtAmount.Name = "txtAmount"
-        txtAmount.Size = New Size(125, 27)
+        txtAmount.Size = New Size(346, 30)
         txtAmount.TabIndex = 0
         ' 
         ' cmbCategories
         ' 
+        cmbCategories.Font = New Font("Segoe UI", 10F)
         cmbCategories.FormattingEnabled = True
-        cmbCategories.Location = New Point(38, 86)
+        cmbCategories.Location = New Point(57, 249)
         cmbCategories.Name = "cmbCategories"
-        cmbCategories.Size = New Size(151, 28)
+        cmbCategories.Size = New Size(151, 31)
         cmbCategories.TabIndex = 1
         ' 
         ' dtpDate
         ' 
-        dtpDate.Location = New Point(38, 144)
+        dtpDate.Font = New Font("Segoe UI", 10F)
+        dtpDate.Location = New Point(232, 249)
         dtpDate.Name = "dtpDate"
-        dtpDate.Size = New Size(250, 27)
+        dtpDate.Size = New Size(264, 30)
         dtpDate.TabIndex = 2
         ' 
         ' txtDesc
         ' 
-        txtDesc.Location = New Point(38, 200)
+        txtDesc.Font = New Font("Segoe UI", 10F)
+        txtDesc.Location = New Point(57, 337)
         txtDesc.Name = "txtDesc"
-        txtDesc.Size = New Size(125, 27)
+        txtDesc.Size = New Size(439, 30)
         txtDesc.TabIndex = 3
         ' 
         ' btnSave
         ' 
-        btnSave.Location = New Point(38, 288)
+        btnSave.BackColor = Color.FromArgb(CByte(87), CByte(111), CByte(239))
+        btnSave.Font = New Font("Segoe UI", 12F)
+        btnSave.ForeColor = SystemColors.Window
+        btnSave.Location = New Point(276, 399)
         btnSave.Name = "btnSave"
-        btnSave.Size = New Size(94, 29)
+        btnSave.Size = New Size(220, 60)
         btnSave.TabIndex = 4
-        btnSave.Text = "Button1"
-        btnSave.UseVisualStyleBackColor = True
+        btnSave.Text = "Add Transaction"
+        btnSave.UseVisualStyleBackColor = False
         ' 
         ' btnCancel
         ' 
-        btnCancel.Location = New Point(150, 288)
+        btnCancel.Font = New Font("Segoe UI", 12F)
+        btnCancel.Location = New Point(57, 399)
         btnCancel.Name = "btnCancel"
-        btnCancel.Size = New Size(94, 29)
+        btnCancel.Size = New Size(180, 60)
         btnCancel.TabIndex = 5
-        btnCancel.Text = "Button1"
+        btnCancel.Text = "Cancel"
         btnCancel.UseVisualStyleBackColor = True
+        ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Font = New Font("Segoe UI", 18F, FontStyle.Bold)
+        Label1.ForeColor = Color.FromArgb(CByte(87), CByte(111), CByte(239))
+        Label1.Location = New Point(120, 44)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(319, 41)
+        Label1.TabIndex = 6
+        Label1.Text = "Add New Transaction"
+        ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.Font = New Font("Segoe UI", 12F)
+        Label2.Location = New Point(57, 148)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(83, 28)
+        Label2.TabIndex = 7
+        Label2.Text = "Amount"
+        ' 
+        ' Label3
+        ' 
+        Label3.AutoSize = True
+        Label3.Font = New Font("Segoe UI", 12F)
+        Label3.Location = New Point(57, 208)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(92, 28)
+        Label3.TabIndex = 8
+        Label3.Text = "Category"
+        ' 
+        ' Label4
+        ' 
+        Label4.AutoSize = True
+        Label4.Font = New Font("Segoe UI", 12F)
+        Label4.Location = New Point(232, 208)
+        Label4.Name = "Label4"
+        Label4.Size = New Size(53, 28)
+        Label4.TabIndex = 9
+        Label4.Text = "Date"
+        ' 
+        ' Label5
+        ' 
+        Label5.AutoSize = True
+        Label5.Font = New Font("Segoe UI", 12F)
+        Label5.Location = New Point(57, 296)
+        Label5.Name = "Label5"
+        Label5.Size = New Size(112, 28)
+        Label5.TabIndex = 10
+        Label5.Text = "Description"
         ' 
         ' frmAddTransaction
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
+        ClientSize = New Size(562, 516)
+        Controls.Add(Label5)
+        Controls.Add(Label4)
+        Controls.Add(Label3)
+        Controls.Add(Label2)
+        Controls.Add(Label1)
         Controls.Add(btnCancel)
         Controls.Add(btnSave)
         Controls.Add(txtDesc)
@@ -89,7 +158,7 @@ Partial Class frmAddTransaction
         Controls.Add(cmbCategories)
         Controls.Add(txtAmount)
         Name = "frmAddTransaction"
-        Text = "frmAddTransaction"
+        Text = "Add New Transaction"
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -100,4 +169,9 @@ Partial Class frmAddTransaction
     Friend WithEvents txtDesc As TextBox
     Friend WithEvents btnSave As Button
     Friend WithEvents btnCancel As Button
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label5 As Label
 End Class

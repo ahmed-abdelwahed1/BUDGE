@@ -37,7 +37,7 @@ Partial Class frmCategories
         ' 
         txtCatName.Location = New Point(41, 146)
         txtCatName.Name = "txtCatName"
-        txtCatName.Size = New Size(220, 27)
+        txtCatName.Size = New Size(253, 27)
         txtCatName.TabIndex = 0
         ' 
         ' rbIncome
